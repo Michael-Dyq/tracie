@@ -298,7 +298,7 @@ data_collator = DoNothingDataCollator()
 data_loader = DataLoader(
     eval_dataset,
     sampler=sampler,
-    batch_size= 1, #training_args.eval_batch_size,
+    batch_size= 10, #training_args.eval_batch_size,
     collate_fn=data_collator.collate_batch,)
 print('-----------------creating data_loader finished -----------------')
 #output_eval_file = os.path.join(training_args.output_dir, "eval_results_lm.txt")
