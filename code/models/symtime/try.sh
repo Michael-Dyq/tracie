@@ -1,0 +1,1 @@
+python try.py --model_type=t5  --model_name_or_path=symtime-pretrained-model/starttokenizer_name=t5-large --duration_model_path=symtime-pretrained-model/duration --eval_data_file=../../../data/uniform-prior-symbolic-format/test.txt --line_by_line
