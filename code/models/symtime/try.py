@@ -286,7 +286,7 @@ duration_model = T5ForConditionalGeneration.from_pretrained(model_args.duration_
 #print('duration——cuda_summary', torch.cuda.memory_summary(device=None, abbreviated=False))
 print('-----------------loading duration model finished-----------------')
 torch.cuda.empty_cache()
-model = T5ForConditionalGenerationCustom.from_pretrained('symtime-pretrained-model/start').to(device)#.cuda()
+model = T5ForConditionalGenerationCustom.from_pretrained('../../../../symtime-pretrained-model/start').to(device)#.cuda()
 #print('start———cuda_summary', torch.cuda.memory_summary(device=None, abbreviated=False))
 model.duration_t5_model = duration_model
 print('-----------------loading start model finished-----------------')
